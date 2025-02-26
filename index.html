@@ -4,8 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Workshop Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-200">
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <div class="w-64 bg-gray-800 text-white p-4 fixed h-full">
+            <h2 class="text-2xl font-semibold mb-6">Dashboard</h2>
+            <ul class="space-y-4">
+                <li><a href="#" class="block text-lg hover:text-gray-400">Accueil</a></li>
+                <li><a href="#" class="block text-lg hover:text-gray-400">Utilisateurs</a></li>
+                <li><a href="#" class="block text-lg hover:text-gray-400">Ventes</a></li>
+                <li><a href="#" class="block text-lg hover:text-gray-400">Support</a></li>
+            </ul>
+        </div>
+    
+        <!-- Contenu principal -->
+        <div class="flex-1 ml-64 p-8">
+            <!-- Header -->
+            <div class="flex items-center justify-between mb-8">
+                <h1 class="text-3xl font-bold text-gray-800">Bienvenue sur votre Dashboard</h1>
+                <button class="bg-blue-500 text-white py-2 px-6 rounded hover:bg-blue-400">Ajouter un Utilisateur</button>
+            </div>
+    
+            <!-- Statistiques -->
+            <div class="grid grid-cols-3 gap-6 mb-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-700">Utilisateurs</h3>
+                    <p class="text-2xl font-bold text-blue-500">1,230</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-700">Ventes</h3>
+                    <p class="text-2xl font-bold text-green-500">$15,230</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-700">Support Tickets</h3>
+                    <p class="text-2xl font-bold text-yellow-500">35</p>
+                </div>
+            </div>
+    
+            <!-- Tableau des transactions -->
+            <table class="min-w-full bg-white border border-gray-200 rounded-lg shadow-md">
+                <thead>
+                    <tr>
+                        <th class="p-4 text-left text-gray-700">Utilisateur</th>
+                        <th class="p-4 text-left text-gray-700">Montant</th>
+                        <th class="p-4 text-left text-gray-700">Statut</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="p-4">John Doe</td>
+                        <td class="p-4">$120</td>
+                        <td class="p-4 text-green-500">Payé</td>
+                    </tr>
+                    <tr>
+                        <td class="p-4">Jane Smith</td>
+                        <td class="p-4">$85</td>
+                        <td class="p-4 text-orange-500">En attente</td>
+                    </tr>
+                    <tr>
+                        <td class="p-4">Michael Lee</td>
+                        <td class="p-4">$150</td>
+                        <td class="p-4 text-red-500">Non payé</td>
+                    </tr>
+                </
     
 </body>
 </html>
